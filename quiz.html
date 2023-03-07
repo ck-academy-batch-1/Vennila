@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        button {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body style="text-align:center">
+    <p>Q1.HTML expand for?</p>
+    <br>
+    <button type="button" id="crt">HyperText Markup Language</button><br><br>
+    <button type="button">HyperText Language</button><br><br>
+    <button type="button">HyperText Markup Level</button>
+    <p id="ans"></p>
+    <p>Q2.CSS expand for?</p>
+    <br>
+    <button type="button">A) Cascading Style Sheet</button><br><br>
+    <button type="button" id="crt1">B) Cascading Style Sheets</button><br><br>
+    <button type="button">C) Cascading Sheet Style</button><br>
+    <p id="ans1"></p>
+
+    <p>Q3.JSON expand for?</p>
+    <br>
+    <button type="button">Javascript Object Notation</button><br><br>
+    <button type="button" id="crt2">Javascript Object Notation</button><br><br>
+    <button type="button">Javascript Object Notation</button><br><br>
+
+
+    <button onclick="crtans()">Submit</button>
+
+    <script>
+        function crtans() {
+            if (document.getElementById("crt").checked) {
+                text = "your answer is crt";
+            } else {
+                text = "wrong";
+            }
+            document.getElementById("ans").innerHTML = text;
+
+            if (document.getElementById("crt1").checked) {
+                text = "your answer is crt";
+            } else {
+                text = "wrong";
+            }
+            document.getElementById("ans1").innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
