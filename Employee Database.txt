@@ -1,0 +1,194 @@
+//Database Creation
+	CREATE DATABASE employee
+
+//Create employee table
+
+	CREATE TABLE employee(
+    empid integer NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    email VARCHAR(25) NOT NULL,
+    phone_no VARCHAR(25) NOT NULL,
+    PRIMARY KEY (empid)
+)ENGINE = INNODB;
+
+Alter
+	ALTER TABLE employee ADD COLUMN address VARCHAR(100);
+
+insert 
+	INSERT INTO employee(empid,first_name,last_name,email,phone_no,address)VALUES(1,"nithya","j","abc@gmail.com",9234564402,"xyz");
+	INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("aathi","b","abd@gmail.com",9421562302,"abc");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("mari","m","abe@gmail.com",9046432102,"aaa");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("jananee","r","abf@gmail.com",913595402,"bbb");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("hema","h","abg@gmail.com",9234341102,"ccc");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("suga","s","abh@gmail.com",9034125602,"ddd");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("nisha","n","abx@gmail.com",9234564402,"eee");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("vennila","j","abk@gmail.com",9221168402,"fff");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("aaa","j","abh@gmail.com",9234564402,"ggg");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("yashu","u","abj@gmail.com",9234564402,"hhh");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("dhanshi","u","abl@gmail.com",9234564402,"jjj");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("niranjan","k","amm@gmail.com",9231164402,"kkk");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("mohana","u","adc@gmail.com",9134564402,"lll");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("saras","k","abb@gmail.com",9234264112,"mmm");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("barath","r","aee@gmail.com",9234162402,"xyz");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("kavi","r","abf@gmail.com",9224561402,"xyz");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("renu","j","abj@gmail.com",9238664412,"xzz");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("bbb","b","aac@gmail.com",9234564402,"xyz");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("ccc","c","bbc@gmail.com",9234563602,"xyz");
+INSERT INTO employee(first_name,last_name,email,phone_no,address)VALUES("ddd","d","acc@gmail.com",9216565402,"xyz");
+
+
+
+
+//create department table
+	CREATE TABLE department(
+    depid integer NOT NULL AUTO_INCREMENT,
+    dept_name VARCHAR(30) NOT NULL,
+    PRIMARY KEY (depid)
+)ENGINE = INNODB;
+
+insert
+	INSERT INTO department(depid,dept_name)VALUES(1,"IT");
+	INSERT INTO department(dept_name)VALUES("Finance");
+	INSERT INTO department(dept_name)VALUES("Telecaller");
+
+//create regions table
+	CREATE TABLE regions(
+    region_id integer NOT NULL AUTO_INCREMENT,
+    region_name VARCHAR(30) NOT NULL,
+    PRIMARY KEY (region_id)
+)ENGINE = INNODB;
+
+insert 
+	INSERT INTO regions(region_id,region_name)VALUES(1,"kerala");
+	INSERT INTO regions(region_name)VALUES("tamilnadu");
+	INSERT INTO regions(region_name)VALUES("karnataka");
+
+//create countries table
+
+	CREATE TABLE countries(
+    country_id integer NOT NULL AUTO_INCREMENT,
+    country_name VARCHAR(30) NOT NULL,
+    PRIMARY KEY (country_id)
+)ENGINE = INNODB;
+ 
+insertion of table
+	INSERT INTO countries(country_id,country_name)VALUES(1,"india");
+INSERT INTO countries(country_name)VALUES("china");
+INSERT INTO countries(country_name)VALUES("United States");
+INSERT INTO countries(country_name)VALUES("Indonesia");
+INSERT INTO countries(country_name)VALUES("pakistan");
+INSERT INTO countries(country_name)VALUES("brazil");
+INSERT INTO countries(country_name)VALUES("russia");
+INSERT INTO countries(country_name)VALUES("mexico");
+INSERT INTO countries(country_name)VALUES("japan");
+INSERT INTO countries(country_name)VALUES("ethiopia");
+INSERT INTO countries(country_name)VALUES("poland");
+INSERT INTO countries(country_name)VALUES("south africa");
+INSERT INTO countries(country_name)VALUES("south korea");
+INSERT INTO countries(country_name)VALUES("iraq");
+INSERT INTO countries(country_name)VALUES("canada");
+INSERT INTO countries(country_name)VALUES("nepal");
+INSERT INTO countries(country_name)VALUES("australia");
+INSERT INTO countries(country_name)VALUES("north korea");
+INSERT INTO countries(country_name)VALUES("netherland");
+INSERT INTO countries(country_name)VALUES("sweden");
+
+
+//create dependent table
+	CREATE TABLE dependents(
+    depd_id integer NOT NULL AUTO_INCREMENT,
+    depd_name VARCHAR(30) NOT NULL,
+    marital_status VARCHAR(30) NOT NULL,
+    blood_group VARCHAR(20) NOT NULL,
+    PRIMARY KEY (depd_id)
+)ENGINE = INNODB;
+
+insertion
+	INSERT INTO dependents(depd_id,depd_name,marital_status,blood_group)VALUES(1,"aaa","married","A+ positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("bbb","unmarried","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("ccc","married","B positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("ddd","unmarried","O positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("eee","married","O- negative");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("fff","unmarried","A- negative");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("ggg","unmarried","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("hhh","unmarried","AB positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("iii","married","B+ positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("jjj","unmarried","O positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("kkk","married","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("lll","unmarried","B positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("mmm","married","A- negative");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("nnn","unmarried","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("opo","married","B+ positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("xxx","unmarried","O- negative");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("yyy","married","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("zzz","unmarried","B positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("aaz","unmarried","A positive");
+INSERT INTO dependents(depd_name,marital_status,blood_group)VALUES("axx","married","O positive");
+
+Drop
+	ALTER TABLE dependents DROP COLUMN blood_group;
+
+//create location table
+	CREATE TABLE locations(
+    loc_id integer NOT NULL AUTO_INCREMENT,
+    address VARCHAR(30) NOT NULL,
+    city VARCHAR(30) NOT NULL,
+    state VARCHAR(30) NOT NULL,
+    postal_code VARCHAR(20) NOT NULL,
+    PRIMARY KEY (loc_id)
+)ENGINE = INNODB;
+
+insertion
+	INSERT INTO locations(loc_id,address,city,state,postal_code)VALUES(1,"xxx","cud","tamilnadu",607102);
+INSERT INTO locations(address,city,state,postal_code)VALUES("yyy","villupuram","tamilnadu",607103);
+INSERT INTO locations(address,city,state,postal_code)VALUES("zzz","chennai","tamilnadu",600022);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","thindivam","tamilnadu",607100);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","salem","tamilnadu",600110);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","kanchipuram","tamilnadu",607122);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","erode","tamilnadu",600032);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","thindukal","tamilnadu",601102);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","pudhupettai","tamilnadu",603102);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","pondy","pondicheery",600101);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","upt","tamilnadu",6091021);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","chidambaram","tamilnadu",600012);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","chennai","tamilnadu",6001022);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","cud","tamilnadu",607102);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","theni","tamilnadu",609112);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","upt","tamilnadu",603112);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","cud","tamilnadu",607112);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","villupuram","tamilnadu",607122);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","salem","tamilnadu",601102);
+INSERT INTO locations(address,city,state,postal_code)VALUES("xxx","erode","tamilnadu",602102);
+
+//create job table
+	CREATE TABLE jobs(
+    job_id integer NOT NULL AUTO_INCREMENT,
+    job_name VARCHAR(30) NOT NULL,
+    job_role VARCHAR(30) NOT NULL,
+    vacancy VARCHAR(30) NOT NULL,
+    walkin_date DATE NOT NULL,
+    PRIMARY KEY (job_id)
+)ENGINE = INNODB;
+
+insertion
+	INSERT INTO jobs(job_id,job_name,job_role,vacancy,walkin_date)VALUES(1,"IT","developer",10,"25-03-2023");
+	INSERT INTO jobs(job_name,job_role,vacancy,walkin_date)VALUES("IT","webapplication",15,"25-03-2023");
+Delete
+	DELETE FROM jobs WHERE walkin_date;
+
+//create salary table
+	CREATE TABLE salary(
+    job_id integer NOT NULL AUTO_INCREMENT,
+    monthly_salary VARCHAR(100) NOT NULL,
+    annual_salary VARCHAR(100) NOT NULL,
+    PRIMARY KEY (job_id)
+)ENGINE = INNODB;
+
+insert
+	INSERT INTO salary(job_id,monthly_salary,annual_salary)VALUES(1,20000,"2L");
+	INSERT INTO salary(monthly_salary,annual_salary)VALUES(40000,"5L");
+	INSERT INTO salary(monthly_salary,annual_salary)VALUES(60000,"8L");
+
+Delete
+	UPDATE salary SET monthly_salary=50000,annual_salary="10L" WHERE job_id=2;
